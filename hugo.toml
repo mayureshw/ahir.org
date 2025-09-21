@@ -1,0 +1,46 @@
+# Configure base URL. if using gh-pages https://github.com/<username>/hugo-dpsg URL: https://<username>.github.io/hugo-dpsg/
+baseurl = "http://mayuresh.warunjikar.in/ahir.org"
+title = "ahir"
+theme = "hugo-dpsg"
+
+[Params.logo]
+title = "ahir"
+subtitle = "From Algorithms to Hardware"
+
+[Params.style.vars]
+    highlightColor = "#36486b"
+
+[Params]
+  customCSS = ["css/custom.css"]
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        weight = 1
+        url = "/"
+    [[menu.main]]
+        identifier = "gettingstarted"
+        name = "Getting Started"
+        weight = 2
+        url = "/gettingstarted/"
+    [[menu.main]]
+        identifier = "documentation"
+        name = "Documentation"
+        weight = 3
+        url = "/documentation/"
+    [[menu.main]]
+        identifier = "people"
+        name = "People"
+        weight = 4
+        url = "/people/"
+    [[menu.main]]
+        identifier = "resources"
+        name = "Resources"
+        weight = 5
+        url = "/resources/"
+    [[menu.main]]
+        identifier = "contactus"
+        name = "Contact Us"
+        weight = 6
+        url = "/contactus/"
