@@ -2,7 +2,7 @@
 
 There are two options to install AHIR on your system:
 
-1. **AHIR Docker Image**
+1. **Using AHIR Docker Image**
 
     Docker images is the quickest way to get started with AHIR on your system. You just need docker installed on your system.
 
@@ -70,9 +70,9 @@ There are two options to install AHIR on your system:
 
         You may wish to reclaim some of the space used for the build such as:
 
-        1. `/usr/pkgsrc` : If this was a one off build for you, you may delete the this entire directory. Otherwise you may wish to delete only the following subdirectories.
-        2. `/usr/pkgsrc/distfiles` : Delete the source code tarballs downloaded during the build
-        3. `/usr/pkgsrc/work` : Delete the temporary area used by pkgsrc for the builds.
+        1. `/usr/pkgsrc` : If this was a one off build for you, you may want to delete the the entire pkgsrc source tree. Otherwise, you may wish to delete the contents of the following subdirectories, retaining them as empty directories for future use.
+        2. `/usr/pkgsrc/distfiles/*` : Delete the source code tarballs downloaded during the build
+        3. `/usr/pkgsrc/work/*` : Delete the temporary area used by pkgsrc for the builds.
 
 # Testing the installation
 
