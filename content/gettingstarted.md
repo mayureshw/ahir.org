@@ -4,9 +4,9 @@ There are two options to install AHIR on your system:
 
 1. **Using AHIR Docker Image**
 
-    Docker image is the quickest way to get started with AHIR. You just need docker installed on your system.
+    Docker image is the quickest way to get started with AHIR. You just need the `docker` application installed on your system. You can use your system's package manager to install it.
 
-    AHIR docker images are available in `ghcr.io` and `docker.com` repositories. The `ghcr.io` image is built by a CI flow on AHIR's github repository. Hence, this image gets updated regularly. The `docker.com` image is uploaded manually. It may lag behind the ghcr.io image but is likely to be more stable.
+    AHIR docker images are available in `ghcr.io` and `docker.com` repositories. The `ghcr.io` image is built by a CI flow on AHIR's github repository. Hence, this image gets automatically updated every time the master branch receives an update. The `docker.com` image is uploaded manually. It may lag behind the ghcr.io image but is likely to be more stable.
 
     Commands to get and run these images are as follows:
 
