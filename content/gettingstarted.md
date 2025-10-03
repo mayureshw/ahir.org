@@ -6,24 +6,12 @@ There are two options to install AHIR on your system:
 
     Docker image is the quickest way to get started with AHIR. You just need the `docker` application installed on your system. You can use your system's package manager to install it.
 
-    AHIR docker images are available in `ghcr.io` and `docker.com` repositories. The `ghcr.io` image is built by a CI flow on AHIR's github repository. Hence, this image gets automatically updated every time the master branch receives an update. The `docker.com` image is uploaded manually. It may lag behind the ghcr.io image but is likely to be more stable.
+    AHIR docker image is available in `ghcr.io` repository. The image is built by a CI flow on AHIR's github repository. The commands to get and run this image are as follows:
 
-    Commands to get and run these images are as follows:
-
-    1. From `ghcr.io`
-
-        ```
-        docker pull ghcr.io/mayureshw/vctools:latest
-        docker run -it ghcr.io/mayureshw/vctools:latest
-        ```
-
-    1. From `docker.com`
-
-        ```
-        docker pull mayureshw/ahir:latest
-        docker run -it mayureshw/ahir:latest
-        ```
-
+    ```
+    docker pull ghcr.io/mayureshw/vctools:latest
+    docker run -it ghcr.io/mayureshw/vctools:latest
+    ```
 
 2. **Building AHIR on your system**
 
@@ -66,7 +54,7 @@ There are two options to install AHIR on your system:
         cd /usr/pkgsrc/wip/ahir && bmake MAKE_JOBS=`/usr/bin/nproc` update
         ```
 
-        Depending on your CPU and internet speed, the build may take 30 to 45 minutes.
+        Depending on your CPU and internet speed, the build may take 50 to 60 minutes.
 
     1. Reclaiming the disk space
 
